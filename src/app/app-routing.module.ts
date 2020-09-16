@@ -7,7 +7,7 @@ const routes: Routes = [
     children: [
       {
         path: 'lifecycle',
-        loadChildren: () => import('./lifecycle/lifecycle-routing.module').then(m => m.LifecycleRoutingModule)
+        loadChildren: () => import('./life-cycle/life-cycle.module').then(m => m.LifeCycleModule)
       },
       {
         path: 'do-check',
